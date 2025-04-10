@@ -1,2 +1,5 @@
 fastapi
-uvicornX
+uvicorn
+tensorflow
+numpy
+pydantic
