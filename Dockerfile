@@ -10,6 +10,9 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
+# 🔥 Install stress tool to simulate CPU load for autoscaling
+RUN apt-get update && apt-get install -y stress
+
 # Copy all app code into container
 COPY . .
 
